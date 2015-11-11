@@ -1,0 +1,27 @@
+{
+  "Title":"How To Make Pancakes",
+  "Categories":
+        [
+          {
+            "Id":"english",
+            "Title":"English Pancakes",
+            "Description":"How to make English Pancakes",
+            "Image":"/EnglishPancakes.png",
+            "Time":"15 Mins"
+          },
+          {
+            "Id":"1",
+            "Title": "American Pancakes",
+            "Description": "How to make American Pancakes",
+            "Image": "/EnglishPancakes.png",
+            "Time": "25 Mins"
+          },
+          {
+            "Id":"2",
+            "Title": "Other Pancakes",
+            "Description": "How to make Other Pancakes",
+            "Image": "/EnglishPancakes.png",
+            "Time": "15 Mins"
+          }
+        ]
+}
