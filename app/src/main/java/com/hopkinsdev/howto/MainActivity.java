@@ -32,7 +32,9 @@ public class MainActivity extends ActionBarActivity {
 
                Application.getInstance().setReceipe(Application.getInstance().getCategories().get(position).Id);
 
-                startActivity(new Intent(MainActivity.this, InstructionsActivity.class));
+                startActivity(new Intent(MainActivity.this, IngredientsActivity.class));
+
+
             }
         });
     }
@@ -52,9 +54,7 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

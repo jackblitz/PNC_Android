@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- lag indicating whether this window requests that content changes be performed
+        as scene changes with transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- Flag indicating whether this Window's transition should overlap with
+             the exiting transition of the calling Activity. -->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+
+        <!--Flag indicating whether this Window's transition should overlap with
+             the exiting transition of the called Activity when the called Activity
+             finishes. -->
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+        <item name="android:windowSharedElementExitTransition">
+            @null</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+
+        <item name="android:textViewStyle">@style/QuadTextView</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="QuadTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

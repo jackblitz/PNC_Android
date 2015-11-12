@@ -1,6 +1,9 @@
 package com.hopkinsdev.howto.adapters;
 
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.support.design.widget.FloatingActionButton;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +15,8 @@ import android.widget.TextView;
 import com.hopkinsdev.howto.Objects.Application;
 import com.hopkinsdev.howto.Objects.Category;
 import com.hopkinsdev.howto.R;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,8 +94,8 @@ public class CategoryAdapter extends BaseAdapter {
         {
             viewHolder.Title.setText(cat.Title);
             viewHolder.Description.setText(cat.Description);
-            viewHolder.Time.setText(cat.Time);
-          //  viewHolder.Title.setText(cat.Title);
+            viewHolder.Time.setText(Html.fromHtml(cat.Time));
+            //  viewHolder.Title.setText(cat.Title);
         }
 
         return view;

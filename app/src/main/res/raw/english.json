@@ -12,6 +12,7 @@
           },
           {
           "Id":"1",
+            "ScreenType":"1",
           "Title": "Test Pancakes",
           "Description": "How to make American Pancakes",
           "Image": "/EnglishPancakes.png",
@@ -19,6 +20,7 @@
           },
           {
             "Id":"1",
+            "ScreenType":"1",
             "Title": "American Pancakes",
             "Description": "How to make American Pancakes",
             "Image": "/EnglishPancakes.png",
@@ -26,6 +28,7 @@
           },
           {
             "Id":"2",
+            "ScreenType":"1",
             "Title": "Other Pancakes",
             "Description": "How to make Other Pancakes",
             "Image": "/EnglishPancakes.png",
