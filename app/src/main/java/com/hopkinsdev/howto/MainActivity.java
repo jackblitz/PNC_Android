@@ -7,8 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.hopkinsdev.howto.Objects.Application;
+import com.hopkinsdev.howto.Objects.Reciepe;
 import com.hopkinsdev.howto.adapters.CategoryAdapter;
 import com.nirhart.parallaxscroll.views.ParallaxListView;
 
@@ -30,9 +32,19 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-               Application.getInstance().setReceipe(Application.getInstance().getCategories().get(position).Id);
+                try {
+                    Reciepe rec = Application.getInstance().getReceipe("english");//Application.getInstance().getCategories().get(position).Id);
 
-                startActivity(new Intent(MainActivity.this, IngredientsActivity.class));
+                    if(rec == null){
+                        Toast.makeText(MainActivity.this, MainActivity.this.getString(R.string.sorry_load), Toast.LENGTH_SHORT).show();
+                    }else {
+                        Intent i = new Intent(MainActivity.this, IngredientsActivity.class);
+                        i.putExtra("Current", rec);
+                        startActivity(i);
+                    }
+                }catch (Exception e){
+                    Toast.makeText(MainActivity.this, MainActivity.this.getString(R.string.sorry_load), Toast.LENGTH_SHORT).show();
+                }
 
 
             }

@@ -71,10 +71,15 @@ public class Application extends BaseApplication{
 
 
 
-    public void setReceipe(String file){
-        String item = LoadUtils.loadResourceByName(this, file);
+    public Reciepe getReceipe(String file) throws Exception {
+        try {
 
-        mCurrentReceipe = (Reciepe) JsonEncoder.fromJson(item, Reciepe.class);
+            String item = LoadUtils.loadResourceByName(this, file);
+
+            return (Reciepe) JsonEncoder.fromJson(item, Reciepe.class);
+        }catch (Exception e) {
+            throw e;
+        }
     }
 
     public Screen getScreen(int index) {

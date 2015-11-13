@@ -1,5 +1,8 @@
 {
-  "Title":"How To Make Pancakes",
+  "Title":"American Pancakes",
+  "Time":"Time\n<b>15</b>\nmins",
+  "CooksFor":"2",
+  "Cals":"2",
   "Screens":
         [
           {
@@ -34,5 +37,24 @@
             "Image": "/EnglishPancakes.png",
             "Time": "15 Mins"
           }
-        ]
+        ],
+  "Ingredients":
+  [
+    {
+      "Amount":"2",
+      "Value":"Eggs"
+    },
+    {
+      "Amount":"5",
+      "Value":"Flour"
+    },
+    {
+      "Amount":"2",
+      "Value":"Sugar"
+    },
+    {
+      "Amount":"7",
+      "Value":"Strawberries"
+    }
+  ]
 }

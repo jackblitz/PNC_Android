@@ -2,6 +2,9 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- lag indicating whether this window requests that content changes be performed
@@ -20,7 +23,6 @@
         <item name="android:windowSharedElementExitTransition">
             @null</item>
 
-        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
 
         <item name="android:textViewStyle">@style/QuadTextView</item>
 

@@ -24,6 +24,8 @@ public class CutView extends LinearLayout {
     private Path mPath;
     private int Height = 0;
     private int Width = 0;
+    private onLevelingHeight mListener;
+
     public CutView(Context context) {
         super(context);
 
@@ -52,12 +54,12 @@ public class CutView extends LinearLayout {
         setWillNotDraw(false);
 
         mPaint = new Paint();
-        mPaint.setColor(Color.LTGRAY);//getContext().getResources().getColor(R.color.primary));
+        mPaint.setColor(Color.WHITE);//getContext().getResources().getColor(R.color.primary));
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
         mPaint.setAntiAlias(true);
 
         mPaintLine = new Paint();
-        mPaintLine.setColor(Color.BLACK);//getContext().getResources().getColor(R.color.primary));
+        mPaintLine.setColor(Color.DKGRAY);//getContext().getResources().getColor(R.color.primary));
         mPaintLine.setStyle(Paint.Style.STROKE);
         mPaintLine.setAntiAlias(true);
 
@@ -68,18 +70,30 @@ public class CutView extends LinearLayout {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
 
-        Height = getHeight() / 2;
+
         Width = getHeight() / 4;
+        Height = getHeight() - Width;
 
         mPath = new Path();
-        mPath.moveTo(0, getHeight() / 2);
+        mPath.moveTo(0, Height);
         mPath.lineTo(getWidth(), Width);
         mPath.lineTo(getWidth(), getHeight());
         mPath.lineTo(0, getHeight());
-        mPath.lineTo(0, getHeight() / 2);
+        mPath.lineTo(0, Height);
         mPath.close();
+        if(mListener != null){
+            mListener.onHeightChanged(Width);
+        }
 
 
+    }
+
+    public void setHeightListener(onLevelingHeight listener){
+        mListener = listener;
+    }
+
+    public interface onLevelingHeight{
+        public void onHeightChanged(int value);
     }
 
     @Override
@@ -91,8 +105,8 @@ public class CutView extends LinearLayout {
 
 
         int alpha = 255;
-        int take = alpha / 5;
-        for(int i = 0; i < 5 ; i++) {
+        int take = alpha / 15;
+        for(int i = 0; i < 15 ; i++) {
             alpha -= take;
             mPaintLine.setAlpha(alpha);
             canvas.drawLine(0, Height + i, getWidth(), Width + i, mPaintLine);

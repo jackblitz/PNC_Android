@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hopkinsdev.howto.Objects.Application;
+import com.hopkinsdev.howto.Objects.Screen;
 import com.hopkinsdev.howto.R;
 
 /**
@@ -17,15 +18,17 @@ import com.hopkinsdev.howto.R;
 public class ScreenFragment extends BaseFragment {
 
     static final String ARG_POSITION = "pos";
+    static final String CURRENT_SCREEN = "screen";
     private View mView;
     private TextView mTitle;
     private TextView mInstructions;
     private ImageView mImage;
 
-    public static ScreenFragment newInstance(int page) {
+    public static ScreenFragment newInstance(int page, Screen screen) {
         ScreenFragment fragmentFirst = new ScreenFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_POSITION, page);
+        args.putParcelable(CURRENT_SCREEN, screen);
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -34,7 +37,7 @@ public class ScreenFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCurrentScreen = Application.getInstance().getScreen(getArguments().getInt(ARG_POSITION));
+        mCurrentScreen = getArguments().getParcelable(CURRENT_SCREEN);
     }
 
     @Nullable
