@@ -58,7 +58,7 @@
             android:layout_alignParentRight="true"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            card_view:cardBackgroundColor="@color/primary"
+            card_view:cardBackgroundColor="@color/bar_color"
             card_view:cardCornerRadius="25dp"
             card_view:cardElevation="6dp">
 

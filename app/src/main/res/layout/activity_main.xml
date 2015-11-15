@@ -1,13 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:fitsSystemWindows="true"
-    android:background="@color/primary"
+    android:background="@color/background"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity">
 
    <com.nirhart.parallaxscroll.views.ParallaxListView
        android:id="@+id/listView"
-       android:fitsSystemWindows="true"
-       android:background="@color/primary"
+       android:background="@color/background"
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"></com.nirhart.parallaxscroll.views.ParallaxListView>
 

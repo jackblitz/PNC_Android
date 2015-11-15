@@ -54,7 +54,7 @@ public class CutView extends LinearLayout {
         setWillNotDraw(false);
 
         mPaint = new Paint();
-        mPaint.setColor(Color.WHITE);//getContext().getResources().getColor(R.color.primary));
+        mPaint.setColor(getContext().getResources().getColor(R.color.background));
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
         mPaint.setAntiAlias(true);
 

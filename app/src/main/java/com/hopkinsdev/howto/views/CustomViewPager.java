@@ -245,7 +245,7 @@ public class CustomViewPager extends View implements PageIndicator {
         mBackground = Bitmap.createBitmap(getWidth(),
                 getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas1 = new Canvas(mBackground);
-        mPaintFill.setColor(Color.BLACK);
+        mPaintFill.setColor(getContext().getResources().getColor(R.color.background, null));
 
         float startPoint = (longOffset + ((threeRadius / 2))) * (1) - (longOffset / 2); //+ longPaddingBefore + (threeRadius / 2);
         float endPoint = (longOffset + ((threeRadius / 2))) * ( count) - (longOffset / 2); //+ longPaddingBefore + (threeRadius / 2);
