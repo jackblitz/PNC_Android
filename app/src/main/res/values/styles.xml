@@ -19,7 +19,18 @@
 
     <style name="title_sub_text">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="amount_text">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="ingredient">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16dp</item>
     </style>
 
 

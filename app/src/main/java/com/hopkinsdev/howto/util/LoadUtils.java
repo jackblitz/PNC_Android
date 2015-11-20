@@ -2,7 +2,10 @@ package com.hopkinsdev.howto.util;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 
 /**
@@ -34,6 +37,22 @@ public class LoadUtils {
             byte[] b = new byte[in_s.available()];
             in_s.read(b);
             return new String(b);
+        } catch (Exception e) {
+            // e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Bitmap loadBitmap(Context context, String name){
+        try {
+            Resources res = context.getResources();
+            InputStream in_s = context.getResources().openRawResource(
+                    context.getResources().getIdentifier("raw/" + name,
+                            "json", context.getPackageName()));
+
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(in_s);
+
+            return BitmapFactory.decodeStream(bufferedInputStream);
         } catch (Exception e) {
             // e.printStackTrace();
         }

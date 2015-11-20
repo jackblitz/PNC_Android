@@ -19,9 +19,14 @@ public class Ingredient implements Parcelable{
     @Expose
     public String Value;
 
+    @SerializedName("Unit")
+    @Expose
+    public String Unit;
+
     public Ingredient(Parcel parcel){
         Amount = parcel.readInt();
         Value = parcel.readString();
+        Unit = parcel.readString();
     }
 
     @Override
@@ -34,6 +39,7 @@ public class Ingredient implements Parcelable{
 
         dest.writeInt(Amount);
         dest.writeString(Value);
+        dest.writeString(Unit);
     }
 
     public static final Creator<Ingredient> CREATOR = new Creator<Ingredient>() {

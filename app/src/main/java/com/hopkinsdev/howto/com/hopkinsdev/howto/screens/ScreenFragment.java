@@ -23,6 +23,8 @@ public class ScreenFragment extends BaseFragment {
     private TextView mTitle;
     private TextView mInstructions;
     private ImageView mImage;
+    private TextView mScreenNumber;
+    private int mPosition;
 
     public static ScreenFragment newInstance(int page, Screen screen) {
         ScreenFragment fragmentFirst = new ScreenFragment();
@@ -38,6 +40,7 @@ public class ScreenFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mCurrentScreen = getArguments().getParcelable(CURRENT_SCREEN);
+        mPosition = getArguments().getInt(ARG_POSITION);
     }
 
     @Nullable
@@ -49,7 +52,7 @@ public class ScreenFragment extends BaseFragment {
         mTitle = (TextView)mView.findViewById(R.id.screenTitle);
         mInstructions = (TextView)mView.findViewById(R.id.screenInstuctions);
         mImage = (ImageView)mView.findViewById(R.id.screenImage);
-
+        mScreenNumber = (TextView)mView.findViewById(R.id.screenNumber);
         initScreen();
 
         return mView;
@@ -57,8 +60,15 @@ public class ScreenFragment extends BaseFragment {
     
     public void initScreen(){
         if(mCurrentScreen != null){
-            mTitle.setText(mCurrentScreen.Title);
+
+
+            if(mCurrentScreen.Title != null && !mCurrentScreen.Title.isEmpty())
+                mTitle.setText(mCurrentScreen.Title);
+            else
+                mTitle.setVisibility(View.GONE);
+
             mInstructions.setText(mCurrentScreen.Description);
+            mScreenNumber.setText(getString(R.string.step) + " " +  Integer.toString(mPosition + 1) + " :");
            // mImage
         }
     }

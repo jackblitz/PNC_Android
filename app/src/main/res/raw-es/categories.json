@@ -4,15 +4,13 @@
         [
           {
             "Id":"0",
-            "File":"american",
             "Title":"American Pancakes",
-            "Description":"How to make American Pancakes",
+            "Description":"How to make English Pancakes",
             "Image":"/EnglishPancakes.png",
             "Time":"<b>15</b> \n Mins"
           },
           {
             "Id":"1",
-            "File":"american",
             "Title": "British Pancakes",
             "Description": "How to make American Pancakes",
             "Image": "/EnglishPancakes.png",
@@ -20,7 +18,6 @@
           },
           {
             "Id":"2",
-            "File":"american",
             "Title": "ButterMilk Pancakes",
             "Description": "How to make Other Pancakes",
             "Image": "/EnglishPancakes.png",
@@ -28,7 +25,6 @@
           },
           {
             "Id":"3",
-            "File":"american",
             "Title": "Yogurt Pancakes",
             "Description": "How to make Other Pancakes",
             "Image": "/EnglishPancakes.png",

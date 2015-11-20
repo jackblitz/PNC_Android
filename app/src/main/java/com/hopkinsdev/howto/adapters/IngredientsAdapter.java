@@ -21,10 +21,11 @@ public class IngredientsAdapter extends RecyclerView.Adapter {
     public class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         public TextView Ingredients;
-
+        public TextView Quantity;
         public ViewHolder(View v) {
             super(v);
             Ingredients = (TextView) v.findViewById(R.id.ingredient);
+            Quantity = (TextView) v.findViewById(R.id.amount);
 
         }
     }
@@ -46,6 +47,7 @@ public class IngredientsAdapter extends RecyclerView.Adapter {
 
         Ingredient ing = mList.get(position);
         ((ViewHolder)holder).Ingredients.setText(ing.Value);
+        ((ViewHolder)holder).Quantity.setText(Integer.toString(ing.Amount));
 
     }
 

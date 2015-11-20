@@ -12,6 +12,10 @@ public class Category {
     @Expose
     public String Id;
 
+    @SerializedName("File")
+    @Expose
+    public String File;
+
     @SerializedName("Title")
     @Expose
     public String Title;

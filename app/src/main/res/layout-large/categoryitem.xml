@@ -11,9 +11,9 @@
     android:id="@+id/catImageView"
     android:src="@drawable/pancakes"
     android:layout_width="fill_parent"
-    android:scaleType="fitXY"
+    android:scaleType="centerCrop"
     android:adjustViewBounds="true"
-    android:layout_height="wrap_content"
+    android:layout_height="290dp"
     android:tint="#40000000"/>
 
 
