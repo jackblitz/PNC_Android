@@ -13,26 +13,26 @@
           {
             "Id":"1",
             "File":"british",
-            "Title": "British Pancakes",
-            "Description": "How to make British Pancakes",
+            "Title": "Thin Pancakes (Crepes)",
+            "Description": "How to make Crepes",
             "Image": "pan_en",
             "Time": "<b>15</b>\nmins"
           },
           {
             "Id":"2",
-            "File":"american",
-            "Title": "ButterMilk Pancakes",
+            "File":"buttermilk",
+            "Title": "Buttermilk Pancakes",
             "Description": "How to make ButterMilk Pancakes",
-            "Image": "",
-            "Time": "<b>15</b>\nmins"
+            "Image": "butter_milk",
+            "Time": "<b>20</b>\nmins"
           },
           {
             "Id":"3",
-            "File":"american",
+            "File":"yogurt",
             "Title": "Yogurt Pancakes",
             "Description": "How to make Yogurt Pancakes",
-            "Image": "pan_yo",
-            "Time": "<b>15</b>\nmins"
+            "Image": "pan_us",
+            "Time": "<b>20</b>\nmins"
           }
         ]
 }

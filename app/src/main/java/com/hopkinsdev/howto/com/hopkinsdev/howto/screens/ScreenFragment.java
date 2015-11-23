@@ -2,6 +2,7 @@ package com.hopkinsdev.howto.com.hopkinsdev.howto.screens;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,7 +69,7 @@ public class ScreenFragment extends BaseFragment {
             else
                 mTitle.setVisibility(View.GONE);
 
-            mInstructions.setText(mCurrentScreen.Description);
+            mInstructions.setText(Html.fromHtml(mCurrentScreen.Description));
             mScreenNumber.setText(getString(R.string.step) + " " +  Integer.toString(mPosition + 1) + " :");
 
             if(mCurrentScreen.Image != null && !mCurrentScreen.Image.isEmpty()) {

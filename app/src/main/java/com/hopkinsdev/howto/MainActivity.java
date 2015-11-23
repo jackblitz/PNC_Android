@@ -26,22 +26,40 @@ public class MainActivity extends ActionBarActivity {
 
     private ParallaxListView mParralaxScrollView;
     private CategoryAdapter mCatAdapter;
-
+    private AdRequest adRequest;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
+        mAdView = (AdView) findViewById(R.id.adView);
 
       //  String android_id = Settings.Secure.getString(getContentResolver(),
       //          Settings.Secure.ANDROID_ID);
 
 
-        AdRequest adRequest = new AdRequest.Builder()
+        adRequest = new AdRequest.Builder()
                                      .addTestDevice("10bf660d5a339224")
                                     .build();
-        mAdView.loadAd(adRequest);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mAdView.loadAd(adRequest);
+                    }
+                });
+            }
+        }).start();
 
 
         mParralaxScrollView = (ParallaxListView) findViewById(R.id.listView);

@@ -1,0 +1,88 @@
+{
+  "Title":"Yogurt Pancakes",
+  "Time":"<b>20</b>\nmins",
+  "Image":"pan_us",
+  "CooksFor":"2",
+  "Cals":"2",
+  "Screens":
+  [
+    {
+      "Id":"0",
+      "ScreenType":"0",
+      "Title":"Let it Melt",
+      "Description":"Start by heating a non-stick frying pan on a low heat. Once the pan is warm add the butter. Make sure not to burn the butter. Once the butter has melted poor the contents of the pan into a small bowl. <p> Make sure to keep this butter in a warm place",
+      "Image":"melt_butter",
+      "Remaining":"15 Mins"
+    },
+    {
+      "Id":"0",
+      "ScreenType":"0",
+      "Title":"Wisk it up",
+      "Description":"Pour the yogurt into a bowl and then crack the eggs into the yogurt. Next calmly whisk the yogurt and eggs together. Once the eggs and yogurt are mixed together add the melted butter to the solution and again gently whisk together.",
+      "Image":"flour_egg",
+      "Remaining":"15 Mins"
+    },
+    {
+      "Id":"1",
+      "ScreenType":"1",
+      "Title": "Mix it up",
+      "Description": "Next let's add the Flour, baking powder, sugar and salt into the bowl. In order to produce the batter get a fork and beat the mixture together. You want to continually do this until there is no jumps in the mixture. Once you have a nice smooth batter let the mixture sit for a few minutes.",
+      "Image": "mixture",
+      "Time": "25 Mins"
+    },
+    {
+      "Id":"1",
+      "ScreenType":"1",
+      "Title": "Get your cook on!!",
+      "Description": "Using the same non-stick pan as before place the pan on a medium heat and add a teaspoon of butter. Once the butter has melted fill a ladle of batter (If you don't have a ladle pour 1/2 of a cup). Once the pancakes starts to bubble on top turn the pancake over and cook again until golden brown.",
+      "Image": "pan_en_add",
+      "Time": "25 Mins"
+    },
+    {
+      "Id":"2",
+      "ScreenType":"1",
+      "Title": "Eat away!!",
+      "Description": "Serve the pancakes with any toppings you like and eat!",
+      "Image": "pan_us",
+      "Time": "15 Mins"
+    }
+  ],
+  "Ingredients":
+  [
+    {
+      "Amount":"135",
+      "Unit":"g",
+      "Value":"Plain Flour"
+    },
+    {
+      "Amount":"1",
+      "Unit":" tsp",
+      "Value":"Baking Powder"
+    },
+    {
+      "Amount":"1",
+      "Unit":" tbsp",
+      "Value":"Salt"
+    },
+    {
+      "Amount":"3",
+      "Unit":" tbsp",
+      "Value":"Caster Sugar"
+    },
+    {
+      "Amount":"130",
+      "Unit":"ml",
+      "Value":"Plain Yogurt"
+    },
+    {
+      "Amount":"2",
+      "Unit":"",
+      "Value":"Egg"
+    },
+    {
+      "Amount":"2",
+      "Unit":" tbsp",
+      "Value":"Butter"
+    }
+  ]
+}

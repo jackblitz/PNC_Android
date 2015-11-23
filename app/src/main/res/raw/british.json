@@ -1,5 +1,5 @@
 {
-  "Title":"British Pancakes",
+  "Title":"Thin Pancakes (Crepes)",
   "Time":"<b>15</b>\nmins",
   "Image":"pan_en",
   "CooksFor":"2",
@@ -9,16 +9,8 @@
           {
             "Id":"0",
             "ScreenType":"0",
-            "Title":"Let it Melt",
-            "Description":"Start by heating a non-stick frying pan on a low heat. Once the pan is warm add the butter. Make sure not to burn the butter. Once the butter has melted poor the contents of the pan into a small bowl. <p> Make sure to keep this butter in a warm place",
-            "Image":"melt_butter",
-            "Remaining":"15 Mins"
-          },
-          {
-            "Id":"0",
-            "ScreenType":"0",
-            "Title":"Wisk it up",
-            "Description":"Pour the milk into a bowl and then crack the egg into the milk. Next calmly whisk the milk and egg together. Once the egg and milk are mixed together add the melted butter to the solution and again gently whisk together.",
+            "Title":"Let it Blend",
+            "Description":"Start by adding all of your flour in to a large bowl. Next crack the eggs into the middle of the flour. From here add one third of your milk into the flour, from here you can start mixing all the flour, eggs and milk. Keep mixing until you get a think consistency.",
             "Image":"flour_egg",
             "Remaining":"15 Mins"
           },
@@ -26,15 +18,15 @@
           "Id":"1",
             "ScreenType":"1",
           "Title": "Mix it up",
-          "Description": "Next let's add the Flour, baking powder, sugar and salt into the bowl. In order to produce the batter get a fork and beat the mixture together. You want to continually do this until there is no jumps in the mixture. Once you have a nice smooth batter let the mixture sit for a few minutes.",
-          "Image": "mixture",
+          "Description": "Now that you have a thick batter mixture start slowly pouring the remaining milk into the mixture whilst slowly whisking the milk into the batter",
+            "Image": "mixture",
           "Time": "25 Mins"
           },
           {
             "Id":"1",
             "ScreenType":"1",
             "Title": "Get your cook on!!",
-            "Description": "Using the same non-stick pan as before place the pan on a medium heat and add a teaspoon of butter. Once the butter has melted fill a ladle of batter (If you don't have a ladle pour 1/2 of a cup). Once the pancakes starts to bubble on top turn the pancake over and cook again until golden brown.",
+            "Description": "Using a non-stick pan place it on a medium heat. Add 1 table spoon of Oil to the pan. Start by pouring the batter onto the pan, you want to keep the pancake thin so slowly just pour the mixture whilst moving the pan to evenly spread the mixture. Once the pancakes starts to bubble on top turn the pancake over and cook again until golden brown. Each side should take about 40 seconds to cook",
             "Image": "pan_en_add",
             "Time": "25 Mins"
           },
@@ -62,7 +54,7 @@
     {
       "Amount":"300",
       "Unit":"ml",
-      "Value":"semi-skimmed milk"
+      "Value":"milk"
     },
     {
     "Amount":"1",
