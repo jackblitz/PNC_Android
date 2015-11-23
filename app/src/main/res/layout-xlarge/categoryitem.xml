@@ -31,6 +31,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:transitionName="title"
                     style="@style/title_text"
                     android:id="@+id/catTitle"
                     android:text="Pancakes"
@@ -38,6 +39,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    android:transitionName="subText"
                     style="@style/title_sub_text"
                     android:id="@+id/catDescription"
                     android:text="How to make pancakes"

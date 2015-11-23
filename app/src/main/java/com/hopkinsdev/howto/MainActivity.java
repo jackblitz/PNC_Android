@@ -64,13 +64,18 @@ public class MainActivity extends ActionBarActivity {
 
                         View v = view.findViewById(R.id.card_view);
                         View image = view.findViewById(R.id.catImageView);
-                        View cutView = view.findViewById(R.id.cutView);
+                        View cutView = view.findViewById(R.id.catTitle);
+                        View subText = view.findViewById(R.id.catDescription);
+                        View ct = view.findViewById(R.id.cutView);
+
                         Pair participants = new Pair<>(v, ViewCompat.getTransitionName(v));
                         Pair participant = new Pair<>(image, ViewCompat.getTransitionName(image));
                         Pair p = new Pair<>(cutView, ViewCompat.getTransitionName(cutView));
+                        Pair p1 = new Pair<>(subText, ViewCompat.getTransitionName(subText));
+                        Pair p2 = new Pair<>(subText, ViewCompat.getTransitionName(ct));
                         ActivityOptionsCompat transitionActivityOptions =
                                 ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                        MainActivity.this, participants,participant, p);
+                                        MainActivity.this, participants,participant, p, p1, p2);
 
                          ActivityCompat.startActivity(MainActivity.this,
                                  i, transitionActivityOptions.toBundle());

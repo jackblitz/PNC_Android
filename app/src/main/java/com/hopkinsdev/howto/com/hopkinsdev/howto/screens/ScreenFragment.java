@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.hopkinsdev.howto.Objects.Application;
 import com.hopkinsdev.howto.Objects.Screen;
 import com.hopkinsdev.howto.R;
+import com.hopkinsdev.howto.util.LoadUtils;
 
 /**
  * Created by Luke on 28/09/2015.
@@ -69,7 +70,13 @@ public class ScreenFragment extends BaseFragment {
 
             mInstructions.setText(mCurrentScreen.Description);
             mScreenNumber.setText(getString(R.string.step) + " " +  Integer.toString(mPosition + 1) + " :");
-           // mImage
+
+            if(mCurrentScreen.Image != null && !mCurrentScreen.Image.isEmpty()) {
+                mImage.setImageResource(LoadUtils.loadBitmap(getContext(), mCurrentScreen.Image));
+            }else
+            {
+                mImage.setVisibility(View.GONE);
+            }
         }
     }
 }

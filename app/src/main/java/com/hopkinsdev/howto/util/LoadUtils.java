@@ -43,19 +43,8 @@ public class LoadUtils {
         return null;
     }
 
-    public static Bitmap loadBitmap(Context context, String name){
-        try {
-            Resources res = context.getResources();
-            InputStream in_s = context.getResources().openRawResource(
-                    context.getResources().getIdentifier("raw/" + name,
-                            "json", context.getPackageName()));
+    public static int loadBitmap(Context context, String name){
+            return context.getResources().getIdentifier(name, "drawable",  context.getPackageName());
 
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(in_s);
-
-            return BitmapFactory.decodeStream(bufferedInputStream);
-        } catch (Exception e) {
-            // e.printStackTrace();
-        }
-        return null;
     }
 }

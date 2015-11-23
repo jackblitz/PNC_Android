@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.hopkinsdev.howto.Objects.Application;
 import com.hopkinsdev.howto.Objects.Category;
 import com.hopkinsdev.howto.R;
+import com.hopkinsdev.howto.util.LoadUtils;
 
 import org.w3c.dom.Text;
 
@@ -95,7 +96,11 @@ public class CategoryAdapter extends BaseAdapter {
             viewHolder.Title.setText(cat.Title);
             viewHolder.Description.setText(cat.Description);
             viewHolder.Time.setText(Html.fromHtml(cat.Time));
-            //  viewHolder.Title.setText(cat.Title);
+
+
+            if(cat.Image != null && !cat.Image.isEmpty()){
+                viewHolder.Image.setImageResource(LoadUtils.loadBitmap(mContext, cat.Image));
+            }
         }
 
         return view;

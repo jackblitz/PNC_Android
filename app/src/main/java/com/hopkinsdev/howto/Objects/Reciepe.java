@@ -18,6 +18,7 @@ public class Reciepe implements Parcelable {
     public Reciepe(Parcel parcel){
         Title = parcel.readString();
         Time = parcel.readString();
+        Image = parcel.readString();
         CookFors = parcel.readString();
         Cals = parcel.readString();
 
@@ -34,6 +35,10 @@ public class Reciepe implements Parcelable {
     @SerializedName("Time")
     @Expose
     public String Time;
+
+    @SerializedName("Image")
+    @Expose
+    public String Image;
 
     @SerializedName("CooksFor")
     @Expose
@@ -61,6 +66,7 @@ public class Reciepe implements Parcelable {
 
         dest.writeString(Title);
         dest.writeString(Time);
+        dest.writeString(Image);
         dest.writeString(CookFors);
         dest.writeString(Cals);
         dest.writeTypedList(Screens);

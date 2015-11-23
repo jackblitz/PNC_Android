@@ -1,5 +1,6 @@
 package com.hopkinsdev.howto;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -11,15 +12,23 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.hopkinsdev.howto.Objects.Ingredient;
 import com.hopkinsdev.howto.Objects.Reciepe;
 import com.hopkinsdev.howto.adapters.IngredientsAdapter;
 import com.hopkinsdev.howto.adapters.ScreenAdapter;
+import com.hopkinsdev.howto.util.LoadUtils;
 import com.hopkinsdev.howto.views.CutView;
+
+import org.w3c.dom.Text;
+
+import java.nio.InvalidMarkException;
 
 /**
  * Created by Luke on 28/09/2015.
@@ -37,6 +46,8 @@ public class IngredientsActivity extends ActionBarActivity {
     private AppBarLayout mAppBarLayout;
     private LinearLayout mLayoutControl;
     private CardView mCardView;
+    private TextView mTitle;
+    private TextView mDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,32 +64,34 @@ public class IngredientsActivity extends ActionBarActivity {
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("");
 
-
-        //mAppBarLayout = (AppBarLayout)findViewById(R.id.appBarLayout);
-        //mRecyclerView = (RecyclerView)findViewById(R.id.ingredients);
-        //mLayoutManager = new LinearLayoutManager(this);
-       // mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-
         mCardView = (CardView)findViewById(R.id.card_view);
 
-       // mRecyclerView.setLayoutManager(mLayoutManager);
-      //  mAdapter = new IngredientsAdapter(mCurrent.Ingredients);
-        //mRecyclerView.setAdapter(mAdapter);
-        
-        mCutView = (CutView)findViewById(R.id.cutView);
-        mCutView.setHeightListener(new CutView.onLevelingHeight() {
-            @Override
-            public void onHeightChanged(int height, int value) {
-                if(value > 0) {
-                    //toolbar.setMinimumHeight(value);
-                    //toolbar.getLayoutParams().height = value;
-                    mCardView.bringToFront();
-                    mCardView.invalidate();
-                }
-        }});
-        
         mCookTime = (TextView)findViewById(R.id.catTime);
         mCookTime.setText(Html.fromHtml(mCurrent.Time));
+
+        mTitle = (TextView)findViewById(R.id.catTitle);
+        mTitle.setText(Html.fromHtml(mCurrent.Title));
+
+        mDescription = (TextView)findViewById(R.id.catDescription);
+        mDescription.setText(Html.fromHtml(""));
+
+        ImageView image = (ImageView)findViewById(R.id.catImageView);
+        image.setImageResource(LoadUtils.loadBitmap(this, mCurrent.Image));
+
+        LinearLayout layout = (LinearLayout)findViewById(R.id.layout);
+
+        for(Ingredient i : mCurrent.Ingredients){
+            LayoutInflater inflator = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View view = inflator.inflate(R.layout.ingredients_item, null);
+
+            TextView amount = (TextView)view.findViewById(R.id.amount);
+            TextView value = (TextView)view.findViewById(R.id.ingredient);
+
+            amount.setText(Integer.toString(i.Amount) + i.Unit);
+            value.setText(i.Value);
+
+            layout.addView(view);
+        }
     }
 
     public void letsBegin(View v){

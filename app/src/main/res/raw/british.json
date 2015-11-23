@@ -1,7 +1,7 @@
 {
-  "Title":"American Pancakes",
+  "Title":"British Pancakes",
   "Time":"<b>15</b>\nmins",
-  "Image":"pan_us",
+  "Image":"pan_en",
   "CooksFor":"2",
   "Cals":"2",
   "Screens":
@@ -50,39 +50,24 @@
   "Ingredients":
   [
     {
-      "Amount":"135",
+      "Amount":"100",
       "Unit":"g",
       "Value":"Plain Flour"
     },
     {
-      "Amount":"1",
-      "Unit":" tbsp",
-      "Value":"Baking Powder"
-    },
-    {
-      "Amount":"1",
-      "Unit":" tbsp",
-      "Value":"Salt"
-    },
-    {
       "Amount":"2",
-      "Unit":" tbsp",
-      "Value":"Caster Sugar"
-    },
-    {
-      "Amount":"130",
-      "Unit":"ml",
-      "Value":"Milk"
-    },
-    {
-      "Amount":"1",
       "Unit":"",
-      "Value":"Egg"
+      "Value":"Eggs"
     },
     {
-      "Amount":"2",
-      "Unit":" tbsp",
-      "Value":"Butter"
-    }
+      "Amount":"300",
+      "Unit":"ml",
+      "Value":"semi-skimmed milk"
+    },
+    {
+    "Amount":"1",
+    "Unit":" tbsp",
+    "Value":"sunflower or vegetable oil"
+  }
   ]
 }

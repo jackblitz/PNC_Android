@@ -7,32 +7,32 @@
             "File":"american",
             "Title":"American Pancakes",
             "Description":"How to make American Pancakes",
-            "Image":"/EnglishPancakes.png",
-            "Time":"<b>15</b> \n Mins"
+            "Image":"pan_us",
+            "Time":"<b>15</b>\nmins"
           },
           {
             "Id":"1",
-            "File":"american",
+            "File":"british",
             "Title": "British Pancakes",
             "Description": "How to make American Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "25 Mins"
+            "Image": "pan_en",
+            "Time": "<b>15</b>\nmins"
           },
           {
             "Id":"2",
             "File":"american",
             "Title": "ButterMilk Pancakes",
             "Description": "How to make Other Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "15 Mins"
+            "Image": "",
+            "Time": "<b>15</b>\nmins"
           },
           {
             "Id":"3",
             "File":"american",
             "Title": "Yogurt Pancakes",
             "Description": "How to make Other Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "15 Mins"
+            "Image": "pan_yo",
+            "Time": "<b>15</b>\nmins"
           }
         ]
 }
