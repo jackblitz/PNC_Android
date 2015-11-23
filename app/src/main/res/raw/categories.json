@@ -14,7 +14,7 @@
             "Id":"1",
             "File":"british",
             "Title": "British Pancakes",
-            "Description": "How to make American Pancakes",
+            "Description": "How to make British Pancakes",
             "Image": "pan_en",
             "Time": "<b>15</b>\nmins"
           },
@@ -22,7 +22,7 @@
             "Id":"2",
             "File":"american",
             "Title": "ButterMilk Pancakes",
-            "Description": "How to make Other Pancakes",
+            "Description": "How to make ButterMilk Pancakes",
             "Image": "",
             "Time": "<b>15</b>\nmins"
           },
@@ -30,7 +30,7 @@
             "Id":"3",
             "File":"american",
             "Title": "Yogurt Pancakes",
-            "Description": "How to make Other Pancakes",
+            "Description": "How to make Yogurt Pancakes",
             "Image": "pan_yo",
             "Time": "<b>15</b>\nmins"
           }
