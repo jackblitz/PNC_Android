@@ -44,7 +44,6 @@ public class CategoryAdapter extends BaseAdapter {
     public CategoryAdapter(Context context){
         mContext = context;
         mList = Application.getInstance().getCategories();
-
     }
 
     @Override
@@ -90,13 +89,11 @@ public class CategoryAdapter extends BaseAdapter {
             viewHolder = (ViewHolder)view.getTag();
         }
 
-
         if(viewHolder != null)
         {
             viewHolder.Title.setText(cat.Title);
             viewHolder.Description.setText(cat.Description);
             viewHolder.Time.setText(Html.fromHtml(cat.Time));
-
 
             if(cat.Image != null && !cat.Image.isEmpty()){
                 viewHolder.Image.setImageResource(LoadUtils.loadBitmap(mContext, cat.Image));

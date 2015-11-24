@@ -38,11 +38,12 @@ public class Application extends BaseApplication{
         if(mInstance == null)
             mInstance = this;
 
-        String catFile = LoadUtils.loadResourceById(this, R.raw.categories);
+        String catFile = LoadUtils.loadResourceByName(this, "categories");
 
         Categories = new ArrayList<>();
 
-        loadCategories(catFile);
+        if(!catFile.isEmpty())
+            loadCategories(catFile);
     }
 
         private void loadCategories(String file) {

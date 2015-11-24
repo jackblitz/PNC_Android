@@ -4,31 +4,35 @@
         [
           {
             "Id":"0",
-            "Title":"American Pancakes",
-            "Description":"How to make English Pancakes",
-            "Image":"/EnglishPancakes.png",
-            "Time":"<b>15</b> \n Mins"
+            "File":"american",
+            "Title":"Crepe Americanas",
+            "Description":"cómo hacer panqueques americanos",
+            "Image":"pan_us",
+            "Time":"<b>15</b>\nmins"
           },
           {
             "Id":"1",
-            "Title": "British Pancakes",
-            "Description": "How to make American Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "25 Mins"
+            "File":"british",
+            "Title": "Crepes",
+            "Description": "cómo hacer crepes",
+            "Image": "pan_en",
+            "Time": "<b>15</b>\nmins"
           },
           {
             "Id":"2",
-            "Title": "ButterMilk Pancakes",
-            "Description": "How to make Other Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "15 Mins"
+            "File":"buttermilk",
+            "Title": "Buttermilk Pancakes",
+            "Description": "How to make ButterMilk Pancakes",
+            "Image": "butter_milk",
+            "Time": "<b>20</b>\nmins"
           },
           {
             "Id":"3",
+            "File":"yogurt",
             "Title": "Yogurt Pancakes",
-            "Description": "How to make Other Pancakes",
-            "Image": "/EnglishPancakes.png",
-            "Time": "15 Mins"
+            "Description": "How to make Yogurt Pancakes",
+            "Image": "pan_us",
+            "Time": "<b>20</b>\nmins"
           }
         ]
 }

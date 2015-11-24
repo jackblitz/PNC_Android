@@ -1,7 +1,7 @@
 {
-  "Title":"ButterMilk Pancakes",
+  "Title":"Yogurt Pancakes",
   "Time":"<b>20</b>\nmins",
-  "Image":"butter_milk",
+  "Image":"pan_us",
   "CooksFor":"2",
   "Cals":"2",
   "Screens":
@@ -18,7 +18,7 @@
       "Id":"0",
       "ScreenType":"0",
       "Title":"Wisk it up",
-      "Description":"Pour the buttermilk into a bowl and then crack the eggs into the buttermilk. Next calmly whisk the buttermilk and eggs together. Once the eggs and buttermilk are mixed together add the melted butter to the solution and again gently whisk together.",
+      "Description":"Pour the yogurt into a bowl and then crack the eggs into the yogurt. Next calmly whisk the yogurt and eggs together. Once the eggs and yogurt are mixed together add the melted butter to the solution and again gently whisk together.",
       "Image":"flour_egg",
       "Remaining":"15 Mins"
     },
@@ -26,7 +26,7 @@
       "Id":"1",
       "ScreenType":"1",
       "Title": "Mix it up",
-      "Description": "Next let's add the Flour, baking powder, sugar and salt into the bowl. In order to produce the batter get a fork and beat the mixture together. You want to continually do this until there is no lumps in the mixture. Once you have a nice smooth batter let the mixture sit for a few minutes.",
+      "Description": "Next let's add the Flour, baking powder, sugar and salt into the bowl. In order to produce the batter get a fork and beat the mixture together. You want to continually do this until there is no jumps in the mixture. Once you have a nice smooth batter let the mixture sit for a few minutes.",
       "Image": "mixture",
       "Time": "25 Mins"
     },
@@ -72,7 +72,7 @@
     {
       "Amount":"130",
       "Unit":"ml",
-      "Value":"Buttermilk"
+      "Value":"Plain Yogurt"
     },
     {
       "Amount":"2",
