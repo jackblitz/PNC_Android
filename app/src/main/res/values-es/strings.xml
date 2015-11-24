@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="howto">¿Cómo hacer Crepes</string>
+    <string name="sorry_load">Perdón pero no fue un problema al cargar esta torta</string>
+    <string name="instructions_ad">ca-app-pub-1400936962798111/3833449181</string>
+    <string name="main_app">ca-app-pub-1400936962798111/6786915587</string>
+    <string name="listView">ca-app-pub-1400936962798111/1560333584</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Next</string>
+    <string name="finish">Siguiente</string>
+    <string name="step">Paso</string>
+    <string name="Calories">Calories 35</string>
+    <string name="cooks">Serves 2</string>
+    <string name="ingredients">Ingredientes</string>
+</resources>

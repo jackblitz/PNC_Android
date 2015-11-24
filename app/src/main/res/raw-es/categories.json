@@ -21,16 +21,16 @@
           {
             "Id":"2",
             "File":"buttermilk",
-            "Title": "Buttermilk Pancakes",
-            "Description": "How to make ButterMilk Pancakes",
+            "Title": "Suero de la leche Pancakes",
+            "Description": "Cómo hacer panqueques leche mantequilla",
             "Image": "butter_milk",
             "Time": "<b>20</b>\nmins"
           },
           {
             "Id":"3",
             "File":"yogurt",
-            "Title": "Yogurt Pancakes",
-            "Description": "How to make Yogurt Pancakes",
+            "Title": "Panqueques de yogur",
+            "Description": "Cómo hacer panqueques de yogur",
             "Image": "pan_us",
             "Time": "<b>20</b>\nmins"
           }

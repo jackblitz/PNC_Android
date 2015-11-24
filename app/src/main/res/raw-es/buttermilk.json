@@ -1,5 +1,5 @@
 {
-  "Title":"ButterMilk Pancakes",
+  "Title":"Suero de la leche Crepes",
   "Time":"<b>20</b>\nmins",
   "Image":"butter_milk",
   "CooksFor":"2",
@@ -9,8 +9,8 @@
     {
       "Id":"0",
       "ScreenType":"0",
-      "Title":"Let it Melt",
-      "Description":"Start by heating a non-stick frying pan on a low heat. Once the pan is warm add the butter. Make sure not to burn the butter. Once the butter has melted poor the contents of the pan into a small bowl. <p> Make sure to keep this butter in a warm place",
+      "Title":"Dejar que se derrita",
+      "Description":"Comience por calentar un antiadherente sartén a fuego lento Una vez que la sartén esté caliente añadir la mantequilla Asegúrese de no quemar la mantequilla Una vez que la mantequilla se haya derretido pobres el contenido de la sartén a un pequeño... tazón. <p> Asegúrese de mantener esta mantequilla en un lugar cálido",
       "Image":"melt_butter",
       "Remaining":"15 Mins"
     },
@@ -18,31 +18,31 @@
       "Id":"0",
       "ScreenType":"0",
       "Title":"Wisk it up",
-      "Description":"Pour the buttermilk into a bowl and then crack the eggs into the buttermilk. Next calmly whisk the buttermilk and eggs together. Once the eggs and buttermilk are mixed together add the melted butter to the solution and again gently whisk together.",
+      "Description":"Pour el suero de leche en un recipiente y luego se agrieta los huevos en el suero de leche Siguiente bata con calma el suero de leche y los huevos juntos Una vez que los huevos y el suero de leche se mezclan entre sí añadir la mantequilla derretida a la solución y de nuevo batir suavemente juntos..",
       "Image":"flour_egg",
       "Remaining":"15 Mins"
     },
     {
       "Id":"1",
       "ScreenType":"1",
-      "Title": "Mix it up",
-      "Description": "Next let's add the Flour, baking powder, sugar and salt into the bowl. In order to produce the batter get a fork and beat the mixture together. You want to continually do this until there is no jumps in the mixture. Once you have a nice smooth batter let the mixture sit for a few minutes.",
+      "Title": "Zapping",
+      "Description": "La próxima vamos a añadir la harina, polvo de hornear, el azúcar y la sal en el recipiente el fin de producir el bateador consigue un tenedor y batir la mezcla junto Quieres hacer continuamente esto hasta que no hay saltos en la mezcla.. . Una vez que tenga una buena pasta lisa dejar reposar la mezcla durante unos minutos.",
       "Image": "mixture",
       "Time": "25 Mins"
     },
     {
       "Id":"1",
       "ScreenType":"1",
-      "Title": "Get your cook on!!",
-      "Description": "Using the same non-stick pan as before place the pan on a medium heat and add a teaspoon of butter. Once the butter has melted fill a ladle of batter (If you don't have a ladle pour 1/2 of a cup). Once the pancakes starts to bubble on top turn the pancake over and cook again until golden brown.",
+      "Title": "Obtenga su cocinero encendido !!",
+      "Description": "Utilizando la misma sartén antiadherente como antes de lugar la sartén a fuego medio y agregar una cucharadita de mantequilla Una vez que la mantequilla se haya derretido llenar un cucharón de masa (Si usted no tiene una cuchara vierta 1 / 2 de una taza). Una vez que los panqueques comienza a burbujear en la parte superior gire la tortilla una y otra vez cocinar hasta que estén doradas. ",
       "Image": "pan_en_add",
       "Time": "25 Mins"
     },
     {
       "Id":"2",
       "ScreenType":"1",
-      "Title": "Eat away!!",
-      "Description": "Serve the pancakes with any toppings you like and eat!",
+      "Title": "Come away!!",
+      "Description": "Servir las crepes con cualquier coberturas que le gusta y come!",
       "Image": "pan_us",
       "Time": "15 Mins"
     }
@@ -52,37 +52,37 @@
     {
       "Amount":"135",
       "Unit":"g",
-      "Value":"Plain Flour"
+      "Value":"Aclare la harina"
     },
     {
       "Amount":"1",
       "Unit":" tsp",
-      "Value":"Baking Powder"
+      "Value":"Polvo para hornear"
     },
     {
       "Amount":"1",
       "Unit":" tbsp",
-      "Value":"Salt"
+      "Value":"Sal"
     },
     {
       "Amount":"3",
       "Unit":" tbsp",
-      "Value":"Caster Sugar"
+      "Value":"azúcar glas"
     },
     {
       "Amount":"130",
       "Unit":"ml",
-      "Value":"Buttermilk"
+      "Value":"suero de la leche"
     },
     {
       "Amount":"2",
       "Unit":"",
-      "Value":"Egg"
+      "Value":"Huevo"
     },
     {
       "Amount":"2",
       "Unit":" tbsp",
-      "Value":"Butter"
+      "Value":"Mantequilla"
     }
   ]
 }
