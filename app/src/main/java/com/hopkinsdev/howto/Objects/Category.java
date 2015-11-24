@@ -31,4 +31,6 @@ public class Category {
     @SerializedName("Time")
     @Expose
     public String Time;
+
+    public boolean isAdvert = false;
 }

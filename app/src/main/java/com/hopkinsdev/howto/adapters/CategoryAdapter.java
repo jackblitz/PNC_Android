@@ -12,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.hopkinsdev.howto.Objects.Application;
 import com.hopkinsdev.howto.Objects.Category;
 import com.hopkinsdev.howto.R;
@@ -27,12 +29,30 @@ import java.util.List;
  */
 public class CategoryAdapter extends BaseAdapter {
 
+    private AdRequest adRequest;
+
+    public void addAdd() {
+        adRequest = new AdRequest.Builder()
+                .addTestDevice("10bf660d5a339224")
+                .build();
+
+
+        Category cat= Application.getInstance().getCategories().get(3);
+        cat.isAdvert = true;
+
+        mList.add(1, cat);
+        notifyDataSetChanged();
+        notifyDataSetInvalidated();
+    }
+
+
     public class ViewHolder
     {
         TextView Title;
         TextView Description;
         TextView Time;
         ImageView Image;
+        AdView AdView;
     }
 
     private List<Category> mList;
@@ -83,6 +103,13 @@ public class CategoryAdapter extends BaseAdapter {
             viewHolder.Time = (TextView)view.findViewById(R.id.catTime);
             viewHolder.Description = (TextView)view.findViewById(R.id.catDescription);
             viewHolder.Image = (ImageView)view.findViewById(R.id.catImageView);
+            viewHolder.AdView = (AdView) view.findViewById(R.id.adView);
+
+            //  String android_id = Settings.Secure.getString(getContentResolver(),
+            //          Settings.Secure.ANDROID_ID);
+
+
+
 
             view.setTag(viewHolder);
         }else{
@@ -97,6 +124,14 @@ public class CategoryAdapter extends BaseAdapter {
 
             if(cat.Image != null && !cat.Image.isEmpty()){
                 viewHolder.Image.setImageResource(LoadUtils.loadBitmap(mContext, cat.Image));
+            }
+
+            if(cat.isAdvert){
+                viewHolder.AdView.setVisibility(View.VISIBLE);
+                viewHolder.AdView.loadAd(adRequest);
+            }
+            else{
+                viewHolder.AdView.setVisibility(View.GONE);
             }
         }
 
