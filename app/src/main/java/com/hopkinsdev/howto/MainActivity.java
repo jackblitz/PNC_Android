@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
                     @Override
                     public void run() {
                         mAdView.loadAd(adRequest);
-                        mCatAdapter.addAdd();
+                        //mCatAdapter.addAdd();
                     }
                 });
             }
